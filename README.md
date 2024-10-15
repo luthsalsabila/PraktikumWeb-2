@@ -193,14 +193,164 @@ Script ini merupakan implementasi OOP (Object-Oriented Programming) dengan pener
 #### Output yang diberikan
 ![image](https://github.com/user-attachments/assets/df724fa8-9f71-4ed2-91e3-292057234f9f)
 
-3. Ingeritance
+### 3. Inheritance
+Script ini merupakan implementasi konsep pewarisan dalam pemrograman berorientasi objek (OOP) melalui kelas Pengguna sebagai superclass dan kelas Dosen sebagai subclass. Menggunakan kelas pengguna sebagai subclass dengan atribut protected nama dan metode untuk mengaksesnya, dan kelas dosen sebagai subclass yang mewarisi kelas Pengguna dengan tambahan atribut private mataKuliah. Selanjutnya dengan pewarisan konstruktor Dosen yang memanggil konstruktor superclass untuk menginisialisasi atribut nama, lalu metode tampilkanDataDosen() yang akan menampilkan nama dosen dan mata kuliah yang diajarkan.
+
+#### Langkah-langkah
+1. Definisikan Kelas Pengguna: Buat kelas dasar dengan atribut protected nama dan metode untuk mengaksesnya.
+2. Definisikan Kelas Dosen: Buat kelas turunan yang mewarisi Pengguna, menambahkan atribut mataKuliah.
+3. Konstruktor pada Subclass: Gunakan parent::__construct() untuk memanggil konstruktor superclass dan inisialisasi mataKuliah.
+4. Metode untuk Menampilkan Data: Implementasikan metode tampilkanDataDosen() untuk menampilkan nama dosen dan mata kuliah.
+5. Instansiasi Objek: Buat objek dari kelas Dosen dan panggil metode untuk menampilkan data.
+
+#### Kode Sumber
+![ggg](https://github.com/user-attachments/assets/14ce3063-e44f-4783-bdbc-8fc296eb1323)
+
+#### Output yang dihasilkan
 ![image](https://github.com/user-attachments/assets/49c88459-1d57-460d-a92e-a9061b8a6c9c)
 
-4. Polymorphism
+### 4. Polymorphism
+Script PHP ini mengimplementasikan konsep pewarisan dan overriding dalam pemrograman berorientasi objek (OOP) melalui kelas Pengguna sebagai superclass, dengan Dosen dan Mahasiswa sebagai subclass. Kelas Pengguna memiliki atribut nama, metode untuk mengakses nama, serta metode aksesFitur() yang dioverride oleh subclass. Kelas Dosen menambahkan atribut mataKuliah dan mengoverride aksesFitur() untuk memberikan informasi spesifik akses dosen, sementara kelas Mahasiswa menambahkan atribut nim dan mengoverride aksesFitur() untuk akses mahasiswa. Objek Dosen dan Mahasiswa diinstansiasi dan metode aksesFitur() dipanggil untuk menampilkan informasi masing-masing peran.
+
+#### Langkah-langkah
+1. Definisikan Kelas Pengguna: Buat kelas dasar dengan atribut nama dan metode untuk mendapatkan nama serta metode aksesFitur().
+2. Definisikan Kelas Dosen: Buat subclass yang mewarisi Pengguna, tambahkan atribut mataKuliah, dan override metode aksesFitur().
+3. Definisikan Kelas Mahasiswa: Buat subclass lain yang mewarisi Pengguna, tambahkan atribut nim, dan override metode aksesFitur().
+4. Instansiasi Objek: Buat objek dari kelas Dosen dan Mahasiswa, kemudian panggil metode aksesFitur() untuk masing-masing objek.
+
+#### Kode Sumber
+![ab](https://github.com/user-attachments/assets/f3b66ea6-2184-410e-bd8e-a087086895e9)
+
+#### Output yang dihasilkan
 ![image](https://github.com/user-attachments/assets/63497f72-8da2-44cb-8724-11e76fd8b167)
 
-5. Abstraction
+### 5. Abstraction
+Script ini menunjukan penggunaan kelas abstrak dan pewarisan dalam OOP, di mana kelas Pengguna dideklarasikan sebagai abstrak, sehingga tidak bisa diinstansiasi langsung dan harus diimplementasikan oleh subclass. Kelas Pengguna memiliki atribut nama, metode getNama() untuk mengaksesnya, serta metode abstrak aksesFitur() yang wajib diimplementasikan oleh subclass. Kelas Dosen menginherit Pengguna, menambahkan atribut mataKuliah, dan mengimplementasikan aksesFitur() untuk memberikan informasi akses bagi dosen. Kelas Mahasiswa juga menginherit Pengguna, menambahkan atribut nim, dan mengimplementasikan aksesFitur() khusus untuk mahasiswa.
+
+#### Langkah-langkah 
+1. Definisikan Kelas Abstrak Pengguna: Buat kelas dasar dengan atribut nama, metode untuk mendapatkan nama, dan metode abstrak aksesFitur().
+2. Definisikan Kelas Dosen: Buat subclass yang menginherit Pengguna, menambahkan atribut mataKuliah, dan mengimplementasikan metode aksesFitur().
+3. Definisikan Kelas Mahasiswa: Buat subclass lainnya yang menginherit Pengguna, menambahkan atribut nim, dan mengimplementasikan metode aksesFitur().
+4. Instansiasi Objek: Buat objek dari kelas Dosen dan Mahasiswa, lalu panggil metode aksesFitur() untuk masing-masing objek.
+
+#### Kode Sumber
+![ac](https://github.com/user-attachments/assets/ba9112dc-4e13-4a66-8bc7-9bfd576fe9cf)
+
+#### Output yang dihasilkan
 ![image](https://github.com/user-attachments/assets/40cbb12f-2136-42bd-8dc7-0fb57b32f88a)
 
 
+## JOBSHEET 3-4
+### Intruksi Kerja
+### 1. Inheritance
+Script ini menunjukan penerapan konsep pewarisan dalam pemrograman berorientasi objek (OOP). Di sini, terdapat kelas Person sebagai superclass dan kelas Student sebagai subclass yang mewarisi atribut dan metode dari Person. Kelas Person memiliki atribut name, constructor untuk menginisialisasi name, serta metode getName() untuk mengaksesnya. Kelas Student menginherit Person, menambahkan atribut studentID, dan constructor yang menginisialisasi name (melalui superclass) serta studentID. Selain itu, terdapat metode getStudentID() untuk mengakses ID siswa.
 
+#### Langkah-langkah 
+1. Definisikan Kelas Person: Buat kelas dasar dengan atribut name dan metode untuk mendapatkan nama.
+2. Definisikan Kelas Student: Buat subclass yang menginherit Person, menambahkan atribut studentID, dan mendefinisikan metode untuk mendapatkan student ID.
+3. Instansiasi Objek: Buat objek dari kelas Student dan gunakan metode untuk menampilkan nama dan student ID.
+
+#### Kode Sumber
+![c](https://github.com/user-attachments/assets/4e3e1072-b87b-44aa-ae32-b7ef089c5ed5)
+
+#### Output yang diberikan
+![image](https://github.com/user-attachments/assets/6a54385d-8cfa-4cd4-8520-f413aa2f8e48)
+
+### 2. Polymorphism
+Script PHP ini menerapkan konsep pewarisan dan overriding dalam OOP dengan kelas Person sebagai superclass dan dua subclass: Student dan Teacher. Kelas Person memiliki atribut name, constructor untuk menginisialisasi name, dan metode getName() untuk mengaksesnya. Kelas Student mewarisi Person, menambahkan atribut studentID, mengoverride getName() untuk menampilkan nama dengan prefiks "Student Name: ", dan menyediakan metode getStudentID() untuk mengakses ID siswa. Kelas Teacher juga mewarisi Person, menambahkan atribut teacherID, mengoverride getName() dengan prefiks "Teacher Name: ", serta menyediakan metode getTeacherID() untuk mengakses ID guru.
+
+#### Langkah-langkah
+1. Definisikan Kelas Person: Kelas dasar dengan atribut name dan metode untuk mendapatkan nama.
+2. Definisikan Kelas Student dan Teacher: Kedua subclass menginherit Person, menambahkan atribut unik, dan mengoverride metode getName() untuk memberikan informasi yang relevan.
+3. Instansiasi Objek: Buat objek dari kelas Student dan Teacher, lalu gunakan metode untuk menampilkan nama dan ID masing-masing.
+
+#### Kode Sumber
+![b](https://github.com/user-attachments/assets/2bb06ee4-9500-4f64-ba78-6641b76c1356)
+
+#### Output yang dihasilkan
+![image](https://github.com/user-attachments/assets/b5398f3c-241e-4032-adba-e776298a7b43)
+
+### 3. Encapsulation
+Script PHP ini mengimplementasikan pewarisan dalam OOP, dengan Person sebagai superclass dan Student serta Teacher sebagai subclass. Kelas Student menambahkan studentID, mengoverride getName() dengan prefiks "Student Name: ", serta menyediakan setter untuk name dan studentID. Kelas Teacher menambahkan teacherID, mengoverride getName() dengan prefiks "Teacher Name: ", dan menyediakan metode akses untuk teacherID. Script ini juga menunjukkan cara mengupdate atribut objek menggunakan setter pada Student.
+
+#### Langkah-langkah 
+1. Definisikan Kelas Person: Kelas dasar yang berisi atribut name dan metode untuk mendapatkan nama.
+2. Definisikan Kelas Student: Mewarisi Person, menambahkan studentID, dan mengimplementasikan metode setter.
+3. Definisikan Kelas Teacher: Mewarisi Person, menambahkan teacherID, tetapi tidak memiliki setter.
+4. Instansiasi Objek: Membuat objek dari kelas Student dan Teacher, lalu menampilkan dan memperbarui atribut objek Student.
+
+#### Kode Sumber
+![a](https://github.com/user-attachments/assets/e00e02a2-8334-4202-a9a3-6db92fb988a8)
+
+#### Output yang dihasilkan
+![image](https://github.com/user-attachments/assets/b1142ac9-4e9b-42cc-8359-417e3dac004f)
+
+### 4. Abstraction
+Script PHP ini mengimplementasikan pewarisan dan kelas abstrak dalam OOP, dengan kelas Course sebagai kelas abstrak yang mendefinisikan struktur dasar kursus. Subclass OnlineCourse dan OfflineCourse mengimplementasikan detail spesifik. Course memiliki atribut courseName dan metode abstrak getCourseDetails(), yang diimplementasikan oleh OnlineCourse dengan menambahkan atribut platform untuk kursus online, dan oleh OfflineCourse dengan menambahkan atribut location untuk kursus offline. Keduanya mengoverride getCourseDetails() untuk menampilkan informasi kursus masing-masing.
+
+#### Langkah-langkah
+1. Definisikan Kelas Abstrak Course: Ini adalah kelas dasar yang menentukan struktur kursus.
+2. Definisikan Kelas OnlineCourse: Mengimplementasikan kelas Course dan menambahkan detail untuk kursus online.
+3. Definisikan Kelas OfflineCourse: Mengimplementasikan kelas Course dan menambahkan detail untuk kursus offline.
+4. Instansiasi Objek: Membuat objek dari kelas OnlineCourse dan OfflineCourse, lalu menampilkan detail masing-masing kursus.
+
+#### Kode Sumber
+![d](https://github.com/user-attachments/assets/0cb6fb1b-68ef-4325-83bd-176eb319640d)
+
+#### Output yang dihasilkan
+![image](https://github.com/user-attachments/assets/074b520f-c778-4fa6-b6a2-10a2b57d3689)
+
+
+### Tugas
+Kode PHP dibawah ini menunjukkan struktur OOP dengan menggunakan kelas induk, kelas turunan, dan kelas abstrak. Kelas Person sebagai induk menyimpan informasi dasar seperti nama dan usia, serta menyediakan metode untuk mendapatkan nama, usia, dan peran, yang di-override oleh kelas turunan Dosen dan Mahasiswa. Dosen menambahkan atribut NIP dan mengoverride metode getRole() untuk mengembalikan "Dosen", sementara Mahasiswa menambahkan atribut NIM dan mengoverride getRole() untuk mengembalikan "Mahasiswa". Kelas abstrak Jurnal mendefinisikan atribut judul dan metode abstrak submitJurnal(), yang diimplementasikan oleh JurnalDosen dan JurnalMahasiswa untuk pengajuan jurnal masing-masing. Objek Dosen dan Mahasiswa diinstansiasi dengan atribut terkait, dan jurnal mereka diajukan sesuai perannya.
+
+#### Langkah-langkah
+1. Definisikan Kelas Induk (Person):
+
+  - Buat kelas Person yang berfungsi sebagai kelas dasar untuk kelas Dosen dan Mahasiswa.
+  - Tambahkan atribut untuk nama dan usia, serta metode untuk mendapatkan nama dan usia.
+![f](https://github.com/user-attachments/assets/1574f5d6-0d0d-4049-b5eb-b306661bbb8f)
+
+2. Definisikan Kelas Turunan (Dosen dan Mahasiswa):
+
+  - Buat kelas Dosen yang mewarisi dari Person, tambahkan atribut nip, dan override metode getRole().
+  ![g](https://github.com/user-attachments/assets/d0d1167b-279b-49b6-b0b8-c74a0cda75f4)
+
+  - Buat kelas Mahasiswa dengan cara yang sama seperti kelas Dosen, tetapi dengan atribut nim.
+  ![h](https://github.com/user-attachments/assets/d5ecbc79-a44c-4794-ad69-acae4ca85524)
+
+3. Definisikan Kelas Abstrak (Jurnal):
+   - Buat kelas abstrak Jurnal dengan metode abstrak submitJurnal().
+     ![i](https://github.com/user-attachments/assets/8caad6ed-d603-4976-8506-375dc429cbc9)
+
+4. Definisikan Kelas Turunan dari Kelas Abstrak (JurnalDosen dan JurnalMahasiswa):
+   
+   - Buat kelas JurnalDosen yang mengimplementasikan metode submitJurnal().
+     ![j](https://github.com/user-attachments/assets/1e3f0a17-f7d2-4b9a-a327-e78b720549cf)
+
+  - Buat kelas JurnalMahasiswa dengan cara yang sama.
+  ![k](https://github.com/user-attachments/assets/08891fa0-07d9-4abd-8226-989d61de7815)
+
+5. Instaniasi Objek
+   
+   - Buat objek untuk Dosen dan Mahasiswa.
+     ![l](https://github.com/user-attachments/assets/9704efa2-c5cf-4197-8d7a-13a9aaf8a32a)
+
+6. Tampilkan Informasi Dosen dan Mahasiswa:
+
+  - Gunakan metode yang ada untuk menampilkan informasi terkait objek.
+![m](https://github.com/user-attachments/assets/b9099f1f-ab68-4195-aa24-f2ae1cb53d41)
+
+7. Membuat dan Mengajukan Jurnal:
+   - Buat objek untuk JurnalDosen dan JurnalMahasiswa, lalu panggil metode submitJurnal().
+     ![n](https://github.com/user-attachments/assets/13c6c562-3c9d-4f9d-bacf-ed033f677181)
+
+#### Kode Akhir / Kode Sumber
+![o](https://github.com/user-attachments/assets/bd05427e-f17b-4f0f-9c60-52e8e872626b)
+
+#### Output yang dihasilkan
+![image](https://github.com/user-attachments/assets/068fe2c0-8fcc-4d2a-8b99-cd09946b6650)
+
+
+
+  
