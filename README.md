@@ -1,9 +1,45 @@
 # PraktikumWeb-2
 Berikut Merupakan Tugas Praktikum Web 2
 
+## Panduan Penggunaan
+### 1. Class & Object
+Class adalah blueprint untuk membuat objek. Objek adalah instansi dari class yang memiliki atribut (properties) dan metode (functions).
+
+Contoh Penggunaan :
+![image](https://github.com/user-attachments/assets/ff6a73cb-edf4-4810-a669-bf3fa1896c06)
+
+### 2. Encapsulation
+Encapsulation adalah teknik untuk melindungi data dengan menyembunyikan atribut dan hanya memperbolehkan akses melalui metode. Atribut yang dilindungi biasanya dideklarasikan sebagai private atau protected.
+
+Contoh Penggunaan :
+![image](https://github.com/user-attachments/assets/5b4cce11-834e-479f-bbc9-64802d1d0b02)
+
+### 3. Inheritance
+Inheritance adalah konsep di mana sebuah class dapat mewarisi sifat dan metode dari class lain. Class yang mewarisi disebut subclass, dan class yang diwarisi disebut superclass.
+
+Contoh Penggunaan :
+![code](https://github.com/user-attachments/assets/4c4a85b2-17d5-4029-9da1-e31b69fc3a09)
+
+### 4. Polymorphism
+Polymorphism memungkinkan metode yang sama untuk berfungsi dengan cara yang berbeda berdasarkan objek yang memanggilnya. Hal ini sering digunakan dalam konteks method overriding.
+
+Contoh Penggunaan :
+![code1](https://github.com/user-attachments/assets/43df20ca-ca76-48b2-ba68-989d3adf9401)
+
 ## JOBSHEET 1-2
 ### Materi Pokok
 Class dan Object
+Program ini mendefinisikan kelas Mahasiswa dengan atribut nama, nim, dan jurusan. Terdapat metode tampilkanData() yang menampilkan informasi mahasiswa.
+
+#### Langkah-langkah
+1. Definisi Kelas: Kelas Mahasiswa memiliki atribut untuk menyimpan data mahasiswa.
+2. Metode tampilkanData(): Menampilkan nama, NIM, dan jurusan mahasiswa.
+3. Instansiasi Objek: Membuat objek mahasiswa dan mengisi atributnya.
+4. Menampilkan Data: Memanggil metode tampilkanData() untuk menampilkan informasi.
+
+#### Kode Sumber
+
+Berikut Output yang dapat diberikan
 ![image](https://github.com/user-attachments/assets/c4acc8bf-bb35-4555-a0fc-eae0a2eab4b5)
 
 Atribut dan Metode
