@@ -16,7 +16,7 @@ Atribut dan Metode
 ![image](https://github.com/user-attachments/assets/e00f97b4-e284-44ca-b568-d0f8f7e13620)
 3. Membuat Metode Tambahan
 ![image](https://github.com/user-attachments/assets/65bf42ce-e6b1-42cd-a541-c96537f229da)
-4. Membuat Metode Tambahan
+4. Penggunaan Atribut Method
 ![image](https://github.com/user-attachments/assets/08e54e85-79c3-47eb-bfda-ceb10485daed)
 
 ### Tugas
