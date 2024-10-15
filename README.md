@@ -1,6 +1,6 @@
 # PraktikumWeb-2
 Berikut Merupakan Tugas Praktikum Web 2
-# JOBSHEET 1-2
+## JOBSHEET 1-2
 Gambar dibawah ini merupakan output dari materi kelas dan objek
 ![image](https://github.com/user-attachments/assets/c4acc8bf-bb35-4555-a0fc-eae0a2eab4b5)
 Gambar dibawah merupakan output dari materi atribut dan metode
@@ -17,3 +17,6 @@ Gambar dibawah merupakan output dari Instruksi Tugas3 (Membuat Metode Tambahan)
  Gambar dibawah merupakan output dari Tugas (Dosen) 
 ![image](https://github.com/user-attachments/assets/c030eb60-14a9-48f3-8e4f-06831a36fe54)
 
+## JOBSHEET 2
+Gambar dibawah merupakan output dari Materi Pokok, CLass dan Objek
+![image](https://github.com/user-attachments/assets/5f74b5b9-f4d0-4e14-bd9e-4b7dd3be14a0)
