@@ -314,19 +314,19 @@ Kode PHP dibawah ini menunjukkan struktur OOP dengan menggunakan kelas induk, ke
 2. Definisikan Kelas Turunan (Dosen dan Mahasiswa):
 
   - Buat kelas Dosen yang mewarisi dari Person, tambahkan atribut nip, dan override metode getRole().
-  ![g](https://github.com/user-attachments/assets/d0d1167b-279b-49b6-b0b8-c74a0cda75f4)
+![g](https://github.com/user-attachments/assets/d0d1167b-279b-49b6-b0b8-c74a0cda75f4)
 
   - Buat kelas Mahasiswa dengan cara yang sama seperti kelas Dosen, tetapi dengan atribut nim.
-  ![h](https://github.com/user-attachments/assets/d5ecbc79-a44c-4794-ad69-acae4ca85524)
+![h](https://github.com/user-attachments/assets/d5ecbc79-a44c-4794-ad69-acae4ca85524)
 
 3. Definisikan Kelas Abstrak (Jurnal):
    - Buat kelas abstrak Jurnal dengan metode abstrak submitJurnal().
-     ![i](https://github.com/user-attachments/assets/8caad6ed-d603-4976-8506-375dc429cbc9)
+![i](https://github.com/user-attachments/assets/8caad6ed-d603-4976-8506-375dc429cbc9)
 
 4. Definisikan Kelas Turunan dari Kelas Abstrak (JurnalDosen dan JurnalMahasiswa):
    
    - Buat kelas JurnalDosen yang mengimplementasikan metode submitJurnal().
-     ![j](https://github.com/user-attachments/assets/1e3f0a17-f7d2-4b9a-a327-e78b720549cf)
+![j](https://github.com/user-attachments/assets/1e3f0a17-f7d2-4b9a-a327-e78b720549cf)
 
   - Buat kelas JurnalMahasiswa dengan cara yang sama.
   ![k](https://github.com/user-attachments/assets/08891fa0-07d9-4abd-8226-989d61de7815)
@@ -334,7 +334,7 @@ Kode PHP dibawah ini menunjukkan struktur OOP dengan menggunakan kelas induk, ke
 5. Instaniasi Objek
    
    - Buat objek untuk Dosen dan Mahasiswa.
-     ![l](https://github.com/user-attachments/assets/9704efa2-c5cf-4197-8d7a-13a9aaf8a32a)
+![l](https://github.com/user-attachments/assets/9704efa2-c5cf-4197-8d7a-13a9aaf8a32a)
 
 6. Tampilkan Informasi Dosen dan Mahasiswa:
 
@@ -343,7 +343,7 @@ Kode PHP dibawah ini menunjukkan struktur OOP dengan menggunakan kelas induk, ke
 
 7. Membuat dan Mengajukan Jurnal:
    - Buat objek untuk JurnalDosen dan JurnalMahasiswa, lalu panggil metode submitJurnal().
-     ![n](https://github.com/user-attachments/assets/13c6c562-3c9d-4f9d-bacf-ed033f677181)
+![n](https://github.com/user-attachments/assets/13c6c562-3c9d-4f9d-bacf-ed033f677181)
 
 #### Kode Akhir / Kode Sumber
 ![o](https://github.com/user-attachments/assets/bd05427e-f17b-4f0f-9c60-52e8e872626b)
